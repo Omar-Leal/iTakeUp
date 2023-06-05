@@ -9,9 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     
-    @State var newEmail: String = ""
-    @State var newUser: String = ""
-    @State var setApassword: String = ""
+    @StateObject var registerVM = RegisterViewModel()
     
     var body: some View {
         VStack {
@@ -34,16 +32,16 @@ struct RegisterView: View {
 extension RegisterView {
     var RegisterForm: some View {
         Form {
-            TextField("Username", text: $newUser)
+            TextField("Username", text: $registerVM.userName)
                 .textFieldStyle(DefaultTextFieldStyle())
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.none)
-            TextField("New email", text: $newEmail)
+            TextField("New email", text: $registerVM.userEmail)
                 .textFieldStyle(DefaultTextFieldStyle())
                 .textInputAutocapitalization(.none)
                 .autocorrectionDisabled()
             
-            SecureField("Password", text: $setApassword)
+            SecureField("Password", text: $registerVM.userPassword)
             
             UseFullButton(title: "Create account", bgColor: .green) {
                 // Atempt to create account

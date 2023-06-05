@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+
+class RegisterViewModel: ObservableObject, RegisterUserProtocol {
+    @Published var userEmail: String = ""
+    @Published var userName: String = ""
+    @Published  var userPassword: String = ""
+    
+    
+    init() {  }
+    
+}

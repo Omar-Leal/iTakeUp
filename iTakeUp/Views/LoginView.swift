@@ -23,6 +23,10 @@ struct LoginView: View {
                 )
                 
                 //MARK: Login Form
+                if !loginVM.errorMessage.isEmpty {
+                    Text(loginVM.errorMessage)
+                        .foregroundColor(Color.red)
+                }
                 LoginForm
                 
                 // Create Account
@@ -43,23 +47,19 @@ struct LoginView: View {
 // MARK: FORM VIEW
 extension LoginView {
     var LoginForm: some View {
+     
+        
         Form {
             TextField("Your user email", text: $loginVM.userEmail)
                 .textFieldStyle(DefaultTextFieldStyle())
             SecureField("Your password", text: $loginVM.userPassword)
                 .textFieldStyle(DefaultTextFieldStyle())
             
-            Button {
-                print("Hello Niko")
-            } label: {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.indigo)
-                    Text("Log In")
-                        .foregroundColor(.white)
-                        .bold()
-                }
-            }
+            UseFullButton(title: "Log In",
+                          bgColor: .indigo,
+                          action: {
+                          loginVM.login()
+                          })
             .padding()
         }
         

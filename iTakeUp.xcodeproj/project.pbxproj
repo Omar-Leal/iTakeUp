@@ -34,6 +34,7 @@
 		E73EE19C2A2A958C00312515 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E73EE19B2A2A958C00312515 /* FirebaseAuth */; };
 		E73EE19E2A2A958C00312515 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E73EE19D2A2A958C00312515 /* FirebaseFirestore */; };
 		E73EE1A02A2A958C00312515 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E73EE19F2A2A958C00312515 /* FirebaseFirestoreSwift */; };
+		E7B69E032A2E342800266A97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7B69E022A2E342700266A97 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		E73EE1872A2A902100312515 /* iTakeUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTakeUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73EE18B2A2A902100312515 /* iTakeUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTakeUpUITests.swift; sourceTree = "<group>"; };
 		E73EE18D2A2A902100312515 /* iTakeUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTakeUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E7B69E022A2E342700266A97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		E73EE16E2A2A902000312515 /* iTakeUp */ = {
 			isa = PBXGroup;
 			children = (
+				E7B69E022A2E342700266A97 /* GoogleService-Info.plist */,
 				E7030AE32A2D389B005046C6 /* Shared */,
 				E70F48D42A2B912400879C3D /* Utils */,
 				E70F48D32A2B90F400879C3D /* Models */,
@@ -340,6 +343,7 @@
 			files = (
 				E73EE1782A2A902000312515 /* Preview Assets.xcassets in Resources */,
 				E73EE1742A2A902000312515 /* Assets.xcassets in Resources */,
+				E7B69E032A2E342800266A97 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
