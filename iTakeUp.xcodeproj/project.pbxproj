@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E7030AE52A2D38F9005046C6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7030AE42A2D38F9005046C6 /* HeaderView.swift */; };
 		E7030AE72A2D43E9005046C6 /* UseFullButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7030AE62A2D43E9005046C6 /* UseFullButton.swift */; };
-		E70F48D02A2B909800879C3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E70F48CF2A2B909800879C3D /* GoogleService-Info.plist */; };
 		E70F48D62A2B979B00879C3D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F48D52A2B979B00879C3D /* LoginView.swift */; };
 		E70F48D82A2B97DC00879C3D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F48D72A2B97DC00879C3D /* ProfileView.swift */; };
 		E70F48DA2A2B97EF00879C3D /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F48D92A2B97EF00879C3D /* TodoListView.swift */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		E7030AE42A2D38F9005046C6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E7030AE62A2D43E9005046C6 /* UseFullButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseFullButton.swift; sourceTree = "<group>"; };
-		E70F48CF2A2B909800879C3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E70F48D52A2B979B00879C3D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E70F48D72A2B97DC00879C3D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E70F48D92A2B97EF00879C3D /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 				E70F48D32A2B90F400879C3D /* Models */,
 				E70F48D22A2B90E800879C3D /* ViewModels */,
 				E70F48D12A2B90E000879C3D /* Views */,
-				E70F48CF2A2B909800879C3D /* GoogleService-Info.plist */,
 				E73EE16F2A2A902000312515 /* iTakeUpApp.swift */,
 				E73EE1732A2A902000312515 /* Assets.xcassets */,
 				E73EE1752A2A902000312515 /* iTakeUp.entitlements */,
@@ -343,7 +340,6 @@
 			files = (
 				E73EE1782A2A902000312515 /* Preview Assets.xcassets in Resources */,
 				E73EE1742A2A902000312515 /* Assets.xcassets in Resources */,
-				E70F48D02A2B909800879C3D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
