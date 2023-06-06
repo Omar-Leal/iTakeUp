@@ -16,4 +16,14 @@ protocol RegisterUserProtocol {
     var userEmail: String { get }
     var userPassword: String { get }
     var userName: String { get }
+    
+    func createNewUser()
+    func validate() -> Bool
+}
+
+struct User: Codable {
+    let id: String
+    let name: String
+    let email: String
+    let joinder: TimeInterval
 }

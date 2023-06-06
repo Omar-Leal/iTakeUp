@@ -30,11 +30,11 @@ class LoginViewModel:  UserLoginProtocol ,ObservableObject {
     func validate() -> Bool {
         errorMessage = ""
         guard  !userEmail.trimmingCharacters(in: .whitespaces).isEmpty,
-                !userPassword.trimmingCharacters(in: .whitespaces).isEmpty
-                else {
-                      errorMessage = "You have to fill all the field"
-                        return false
-                    }
+               !userPassword.trimmingCharacters(in: .whitespaces).isEmpty
+        else {
+              errorMessage = "You have to fill all the field"
+                return false
+            }
         
         guard userEmail.contains("@") &&  userEmail.contains(".") else {
             errorMessage = "Enter a valid email"
