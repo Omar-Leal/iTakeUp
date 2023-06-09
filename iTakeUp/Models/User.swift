@@ -21,9 +21,9 @@ protocol RegisterUserProtocol {
     func validate() -> Bool
 }
 
-struct User: Codable {
+struct UserProperties: Codable {
     let id: String
     let name: String
     let email: String
-    let joinder: TimeInterval
+    let joinder: TimeInterval // When the user signed up the app
 }

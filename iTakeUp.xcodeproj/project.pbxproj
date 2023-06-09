@@ -34,7 +34,8 @@
 		E73EE19C2A2A958C00312515 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E73EE19B2A2A958C00312515 /* FirebaseAuth */; };
 		E73EE19E2A2A958C00312515 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E73EE19D2A2A958C00312515 /* FirebaseFirestore */; };
 		E73EE1A02A2A958C00312515 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E73EE19F2A2A958C00312515 /* FirebaseFirestoreSwift */; };
-		E7B69E032A2E342800266A97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7B69E022A2E342700266A97 /* GoogleService-Info.plist */; };
+		E75E2B9D2A329B9D004126FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E2B9C2A329B9D004126FD /* Extensions.swift */; };
+		E75E2B9F2A32ABEB004126FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E75E2B9E2A32ABEB004126FD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +84,8 @@
 		E73EE1872A2A902100312515 /* iTakeUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTakeUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73EE18B2A2A902100312515 /* iTakeUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTakeUpUITests.swift; sourceTree = "<group>"; };
 		E73EE18D2A2A902100312515 /* iTakeUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTakeUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E7B69E022A2E342700266A97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E75E2B9C2A329B9D004126FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = SOURCE_ROOT; };
+		E75E2B9E2A32ABEB004126FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		E70F48D42A2B912400879C3D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E75E2B9B2A329B8A004126FD /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -190,7 +193,7 @@
 		E73EE16E2A2A902000312515 /* iTakeUp */ = {
 			isa = PBXGroup;
 			children = (
-				E7B69E022A2E342700266A97 /* GoogleService-Info.plist */,
+				E75E2B9E2A32ABEB004126FD /* GoogleService-Info.plist */,
 				E7030AE32A2D389B005046C6 /* Shared */,
 				E70F48D42A2B912400879C3D /* Utils */,
 				E70F48D32A2B90F400879C3D /* Models */,
@@ -227,6 +230,15 @@
 				E73EE18D2A2A902100312515 /* iTakeUpUITestsLaunchTests.swift */,
 			);
 			path = iTakeUpUITests;
+			sourceTree = "<group>";
+		};
+		E75E2B9B2A329B8A004126FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E75E2B9C2A329B9D004126FD /* Extensions.swift */,
+			);
+			name = Extensions;
+			path = iTakeUp/Utils/Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,7 +355,7 @@
 			files = (
 				E73EE1782A2A902000312515 /* Preview Assets.xcassets in Resources */,
 				E73EE1742A2A902000312515 /* Assets.xcassets in Resources */,
-				E7B69E032A2E342800266A97 /* GoogleService-Info.plist in Resources */,
+				E75E2B9F2A32ABEB004126FD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +395,7 @@
 				E70F48EE2A2B99A500879C3D /* TodoListItemVM.swift in Sources */,
 				E70F48EA2A2B997C00879C3D /* RegisterVM.swift in Sources */,
 				E70F48F32A2B99D800879C3D /* NewItemVM.swift in Sources */,
+				E75E2B9D2A329B9D004126FD /* Extensions.swift in Sources */,
 				E70F48E82A2B996E00879C3D /* LoginVM.swift in Sources */,
 				E70F48DA2A2B97EF00879C3D /* TodoListView.swift in Sources */,
 				E73EE1702A2A902000312515 /* iTakeUpApp.swift in Sources */,
@@ -541,6 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iTakeUp/Preview Content\"";
+				DEVELOPMENT_TEAM = T453A8JHR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -579,6 +593,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iTakeUp/Preview Content\"";
+				DEVELOPMENT_TEAM = T453A8JHR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

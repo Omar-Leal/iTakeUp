@@ -4,6 +4,7 @@
 //
 //  Created by Omar Leal on 3/6/23.
 //
+import FirebaseFirestore
 import FirebaseAuth
 import Foundation
 
@@ -14,7 +15,7 @@ class RegisterViewModel: ObservableObject, RegisterUserProtocol {
     @Published  var userPassword: String = ""
     @Published var errorMessage: String  = ""
     
-    init() {  }
+    init(){}
     
     func createNewUser() {
         guard validate() else { return }
@@ -33,8 +34,14 @@ class RegisterViewModel: ObservableObject, RegisterUserProtocol {
     }
     
     // Creating own our module for user
-    
     private func insertUserRecord(userId: String) {
+        let newUser = UserProperties(id: userId, name: userName, email: userEmail, joinder: Date().timeIntervalSince1970)
+        
+        let databaseInstance = Firestore.firestore()
+        
+        databaseInstance.collection("users")
+            .document(userId)
+            .setData( newUser.asDictionary() )
         
     }
     
